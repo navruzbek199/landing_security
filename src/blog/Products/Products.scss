@@ -1,0 +1,173 @@
+.products {
+    margin-top: 68px;
+
+    .title {
+        span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            color: #7F73FF;
+        }
+    }
+
+    .products_menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .left_text {
+            h6 {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 44px;
+                line-height: 59px;
+                color: #021D1A;
+
+                span {
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 59px;
+                    color: #7F73FF;
+
+                }
+            }
+        }
+
+        .right_text {
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #464646;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .card_right {
+        margin-top: 48px;
+
+        ul {
+            li {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+                text-align: right;
+
+                .number {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 80px;
+                    color: rgba(95, 95, 95, 0.37);
+                    // text-align: left !important;
+                }
+
+                .text {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #484848;
+                    margin: 0 40px;
+                    text-align: left !important;
+                }
+
+                .about {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #7F73FF;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .card_right_2 {
+        margin-top: -30px;
+
+        .card_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+       
+    }
+
+    .card_right_3 {
+        .card_img {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+    }
+
+    .card_bot {
+        display: grid;
+        place-items: center;
+
+        .card_left_2 {
+            .title {
+                h4 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #000000;
+                    margin-bottom: 32px;
+                }
+            }
+            .link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px auto;
+                a {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                    background: #7F73FF;
+                    border-radius: 31.5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    padding: 18px 36px;
+                    cursor: pointer;
+                    .typed_text{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .text {
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #464646;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+}

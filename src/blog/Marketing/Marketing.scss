@@ -1,0 +1,16 @@
+.marketing{
+    margin: 100px 0 ;
+    .card{
+        width: 100%;
+        height: 105px;
+        margin-bottom: 22px;
+        padding: 10px;
+        background: #F1FAF9;
+        border-radius: 10px;
+        border: none;
+        img{
+            object-fit: contain;
+            height: 80px;
+        }
+    }
+}
