@@ -127,3 +127,113 @@
     font-size: 21px !important;
 
 }
+
+
+@media only screen and (max-width: 1075px){
+    .slider_card {
+        width: 650px;
+        height: 380px;
+        background: rgba(127, 115, 255, 0.5);
+        border-radius: 20px;
+        padding: 37px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    
+        .left {
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 30px;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+    
+            span {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                &::before{
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    
+        .right {
+            img {
+                border-radius: 28px;
+                box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+                width: 250px;
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+    }
+} 
+
+
+@media only screen and (max-width: 921px){
+    .slider_card {
+        width: 550px;
+        height: 380px;
+        background: rgba(127, 115, 255, 0.5);
+        border-radius: 20px;
+        padding: 37px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    
+        .left {
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+    
+            span {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                &::before{
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    display: inline-flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    
+        .right {
+            img {
+                border-radius: 28px;
+                box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+                width: 200px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+    }
+} 

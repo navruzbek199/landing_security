@@ -14,10 +14,10 @@ const Benifits = () => {
             </div>
             <div className="benifits_menu">
                 <div className="left_text">
-                    <h6>Lorem Ipsum is simply <br /> dummy text</h6>
+                    <h6>Lorem Ipsum is simply dummy text</h6>
                 </div>
                 <div className="right_text">
-                    <p>Lorem Ipsum is simply dummy text of the printing and <br /> typesetting industry. Lorem Ipsum has been the industry's <br /> standard dummy text ever since the 1500s</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 </div>
             </div>
             <Row>
