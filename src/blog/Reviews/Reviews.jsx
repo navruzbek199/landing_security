@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import User from '../../assets/images/slider.jpeg'
 const Reviews = () => {
   return (
-    <div className='reviews'>
+    <div className='reviews' id='reviews'>
       <Container fluid="xl">
         <div className="title">
           <h2>Reviews</h2>

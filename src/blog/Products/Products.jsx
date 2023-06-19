@@ -1,14 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Products.scss";
 import bg2 from "../../assets/images/dashboard-behance 1.png";
-import bg3 from "../../assets/images/Illustration1.svg";
-import bg4 from "../../assets/images/Illustration.svg";
+import bg3 from "../../assets/images/Illustrationa.svg";
+import bg4 from "../../assets/images/Illustratione.svg";
 import ArrowLeft from "../../assets/images/arrow-left.svg";
 import CountUp from "react-countup";
+import B1 from '../../assets/images/Group.svg'
+import B2 from '../../assets/images/Group-39.svg'
+import B3 from '../../assets/images/Group-28.svg'
+import BMen from '../../assets/images/Men3.6.svg'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Products = () => {
+
+    useEffect(()=>{
+      gsap.to("#b1", {
+        left: '40px',
+        bottom: '50px',
+        duration: 2,
+        opacity: '1',
+        delay: 1,
+        scrollTrigger: {
+          trigger: "#b1",
+        },
+      });
+      gsap.to("#b2", {
+        right: '80px',
+        top: '100px',
+        opacity: '1',
+        duration: 2,
+        delay: 1,
+        scrollTrigger: {
+          trigger: "#b2",
+        },
+      });
+      gsap.to("#b3", {
+        left: '20px',
+        top: '100px',
+        duration: 2,
+        opacity: '1',
+        delay: 1,
+        scrollTrigger: {
+          trigger: "#b3",
+        },
+      });
+    }, [])
+
+
+
   return (
-    <div className="products">
+    <div className="products" id="product">
       <Container fluid="xl">
         <div className="title">
           <span>Products</span>
@@ -105,6 +148,7 @@ const Products = () => {
             <div className="card_right_2">
               <div className="card_face">
                 <div className="card_img">
+                  <img src={BMen} alt="" />
                   <img src={bg3} alt="" />
                 </div>
               </div>
@@ -119,6 +163,11 @@ const Products = () => {
                   <img src={bg4} alt="" />
                 </div>
               </div>
+                <div className="card_animation">
+                  <img src={B1} alt="" id="b1"/>
+                  <img src={B2} alt="" id="b2"/>
+                  <img src={B3} alt="" id="b3"/>
+                </div>
             </div>
           </Col>
           <Col md={{ span: 5, offset: 2 }} className="card_bot">

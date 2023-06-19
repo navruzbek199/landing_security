@@ -39,13 +39,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="">Benefits</a>
+                <a href="#benifits">Benefits</a>
               </li>
               <li>
-                <a href="">Products</a>
+                <a href="#product">Products</a>
               </li>
               <li>
-                <a href="">Reviews</a>
+                <a href="#reviews">Reviews</a>
               </li>
             </ul>
             <div className="nav_auth">
@@ -57,10 +57,10 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="login">
-                <a href="">Login</a>
+                <a href="https://tizim.astrolab.uz/">Login</a>
               </div>
               <div className="demo">
-                <a href="">Request a Demo</a>
+                <a href="https://tizim.astrolab.uz/">Request a Demo</a>
               </div>
               <button onClick={handleOpenMenu} className="burger-menu">
                 <img src={Burger} alt="burger-icon" />
@@ -105,15 +105,15 @@ const Navbar = () => {
         </div>
         <ul>
           <li>
-            <a href="" className="active">
+            <a href="/" className="active">
               About us
             </a>
           </li>
           <li>
-            <a href="">Benefits</a>
+            <a href="#benifits">Benefits</a>
           </li>
           <li>
-            <a href="">Products</a>
+            <a href="#product">Products</a>
           </li>
           <li>
             <a href="">Reviews</a>

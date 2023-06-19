@@ -7,7 +7,7 @@ import Vektor1 from '../../assets/images/Vector-2.svg'
 import ArrowLeft from '../../assets/images/arrow-left.svg'
 const Benifits = () => {
   return (
-    <div className='benifits'>
+    <div className='benifits' id='benifits'>
         <Container fluid="xl">
             <div className="title">
                 <span>Benefits</span>
