@@ -3,7 +3,7 @@ import "./Reviews.scss";
 import { Container } from "react-bootstrap";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import User from "../../assets/images/person3.jpg";
+import User1 from "../../assets/images/person7.jpg";
 import User2 from "../../assets/images/person1.jpg";
 import User3 from "../../assets/images/person2.jpg";
 import User4 from "../../assets/images/slider.jpeg";
@@ -19,9 +19,7 @@ const Reviews = () => {
         <div className="title">
           <h2> {t("reviews.title")}</h2>
           <h1>{t("reviews.text")}</h1>
-          <p>
-          {t("reviews.desc")}
-          </p>
+          <p>{t("reviews.desc")}</p>
         </div>
       </Container>
       <Swiper
@@ -29,7 +27,8 @@ const Reviews = () => {
         spaceBetween={30}
         slidesPerView={2}
         navigation
-        loop={false}
+        loop={true}
+        grabCursor={true}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
@@ -44,7 +43,7 @@ const Reviews = () => {
               <span>Jane Doe</span>
             </div>
             <div className="right">
-              <img src={User} alt="" />
+              <img src={User1} alt="" />
             </div>
           </div>
         </SwiperSlide>

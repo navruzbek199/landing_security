@@ -39,8 +39,9 @@
     padding-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
+    margin-left: -350px;
     .swiper-slide{
         display: flex;
         justify-content: center;

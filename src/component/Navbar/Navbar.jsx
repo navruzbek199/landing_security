@@ -14,6 +14,7 @@ const Navbar = () => {
   const header = useRef("");
   const ru = useRef("");
   const uz = useRef("");
+  const dropbtn = useRef("");
   const handleOpenMenu = () => {
     setIsOpen(true);
   };
@@ -30,14 +31,14 @@ const Navbar = () => {
 
   const handleRu = () => {
     localStorage.setItem("language", "ru");
-    localStorage.setItem("language_icon", ru.current.src);
     window.location.reload(false);
+    localStorage.setItem("icon_active", "active1");
   };
 
   const handleUz = () => {
     localStorage.setItem("language", "uz");
-    localStorage.setItem("language_icon", uz.current.src);
     window.location.reload(false);
+    localStorage.setItem("icon_active", "active2");
   };
 
   window.onscroll = function () {
@@ -84,41 +85,37 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="nav_auth">
-              <div className="lang dropdown">
-                <a href="#" className="dropbtn">
+              <div
+                className={
+                  localStorage.getItem("icon_active") == undefined
+                    ? "active lang dropdown"
+                    : "lang dropdown"
+                }
+              >
+                <a href="#" className="dropbtn ">
                   <img
-                    src={
-                      localStorage.getItem("language_icon")
-                        ? localStorage.getItem("language_icon")
-                        : Ru_Flag
+                    className={
+                      localStorage.getItem("icon_active") == "active1"
+                        ? "active"
+                        : ""
                     }
-                    alt=""
-                    className="lang_drop_btn"
-                  />
-                  <img
-                    className="flag-uz"
                     src={Ru_Flag}
                     onClick={handleRu}
-                    alt="flag uzb"
+                    alt="flag ru"
+                    ref={ru}
                   />
                   <img
-                    className="flag-uz"
+                    className={
+                      localStorage.getItem("icon_active") == "active2"
+                        ? "active"
+                        : ""
+                    }
                     src={FlagUz}
                     onClick={handleUz}
                     alt="flag uzb"
+                    ref={uz}
                   />
-                  <img className="nav-arrow" src={Arrow} alt="arrow" />
                 </a>
-                <div class="dropdown-content">
-                  <a href="#" onClick={handleRu}>
-                    {" "}
-                    <img src={Ru_Flag} alt="flag uzb" ref={ru} />
-                  </a>
-                  <a href="#" onClick={handleUz}>
-                    {" "}
-                    <img src={FlagUz} alt="flag uzb" ref={uz} />
-                  </a>
-                </div>
               </div>
               <div className="login">
                 <a href="https://tizim.astrolab.uz/">{t("header.login")}</a>

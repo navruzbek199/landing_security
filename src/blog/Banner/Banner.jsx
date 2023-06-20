@@ -10,7 +10,7 @@ const Banner = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Container fluid>
+      <Container fluid className="banner_all">
         <div className="banner_main">
           <Container fluid="xl">
             <div className="main">

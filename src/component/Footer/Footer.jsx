@@ -38,13 +38,13 @@ const Footer = () => {
                         <div className="foter_link">
                             <ul>
                                 <li>
-                                    <a href="#">+998 90 1234567</a>
+                                    <a href="tel:+998 71 200-03-21" >+998 71 200-03-21</a>
                                 </li>
                                 <li>
-                                    <a href="#">49, Islam Karimov street, Tashkent</a>
+                                    <a href="https://yandex.uz/maps/10335/tashkent/house/YkAYdANpSkIDQFprfX9wcXVhZQ==/?ll=69.249373%2C41.310921&z=16" target={'_blank'}>49, Islam Karimov street, Tashkent</a>
                                 </li>
                                 <li>
-                                    <a href="#">info@tizim.astrolab.uz</a>
+                                    <a href="mailto:info@astrolab.uz">info@astrolab.uz</a>
                                 </li>
                             </ul>
                         </div>
