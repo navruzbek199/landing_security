@@ -5,19 +5,18 @@ import Vektor3 from '../../assets/images/Vector-1.svg'
 import Vektor2 from '../../assets/images/Vector-3.svg'
 import Vektor1 from '../../assets/images/Vector-2.svg'
 import ArrowLeft from '../../assets/images/arrow-left.svg'
+import { useTranslation } from "react-i18next";
 const Benifits = () => {
+  const { t } = useTranslation();
   return (
     <div className='benifits' id='benifits'>
         <Container fluid="xl">
             <div className="title">
-                <span>Benefits</span>
+                <span>{t("benefits.benefit")}</span>
             </div>
             <div className="benifits_menu">
                 <div className="left_text">
-                    <h6>Lorem Ipsum is simply dummy text</h6>
-                </div>
-                <div className="right_text">
-                    <p>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <h6>{t("benefits.title_main")}<span>{t("benefits.title_second")}?</span></h6>
                 </div>
             </div>
             <Row>
@@ -27,14 +26,14 @@ const Benifits = () => {
                             <img src={Vektor1} alt="" />    
                         </div>
                         <div className="card_title">
-                            <p>Controlling attendance</p>
+                            <p>{t("benefits.card1_title")}</p>
                         </div>
                         <div className="card_text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            <p>{t("benefits.card1_desc")}</p>
                         </div>
                         <div className="card_link">
                             <a href="/">
-                                Learn More
+                            {t("benefits.card_link")}
                                 <img src={ArrowLeft} alt="" />
                             </a>
                         </div>
@@ -46,14 +45,14 @@ const Benifits = () => {
                             <img src={Vektor3} alt="" />    
                         </div>
                         <div className="card_title">
-                            <p>Community Attachment</p>
+                            <p>{t("benefits.card2_title")}</p>
                         </div>
                         <div className="card_text">
-                            <p>Lorem Ipsum is simply dummy text of the printing. </p>
+                            <p>{t("benefits.card2_desc")} </p>
                         </div>
                         <div className="card_link">
                             <a href="/">
-                                Learn More
+                            {t("benefits.card_link")}
                                 <img src={ArrowLeft} alt="" />
                             </a>
                         </div>
@@ -65,14 +64,14 @@ const Benifits = () => {
                             <img src={Vektor2} alt="" />    
                         </div>
                         <div className="card_title">
-                            <p>Controlling attendance</p>
+                            <p>{t("benefits.card3_title")}</p>
                         </div>
                         <div className="card_text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+                            <p>{t("benefits.card3_desc")}</p>
                         </div>
                         <div className="card_link">
                             <a href="/">
-                                Learn More
+                            {t("benefits.card_link")}
                                 <img src={ArrowLeft} alt="" />
                             </a>
                         </div>

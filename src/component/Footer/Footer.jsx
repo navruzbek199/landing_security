@@ -4,15 +4,16 @@ import { Container } from 'react-bootstrap'
 import Logo from '../../assets/images/Logo.svg'
 import ArrowLeft from '../../assets/images/arrow-left.svg'
 import Typed from 'react-typed';
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
     return (
         <>
             <div className='footer_top'>
                 <Container fluid="xl">
                     <div className="footer_title">
                         
-                        <h3>Subscribe to our newsletter <br />
-                            Get the best offers</h3>
+                        <h3>{t("footer.title")}</h3>
                     </div>
                     <div className="footer_blog">
                         <div className="logo">
@@ -23,7 +24,7 @@ const Footer = () => {
                         <div className="message">
                             <button type='submit'>
                                 <Typed
-                                    strings={['Subscribe']}
+                                    strings={[t("footer.btn")]}
                                     typeSpeed={40}
                                     backSpeed={40}
                                     loop
@@ -31,7 +32,7 @@ const Footer = () => {
                                 />
                                 <img src={ArrowLeft} alt="arrow-left" />
                             </button>
-                            <input type="text" placeholder='Enter your email'  />
+                            <input type="text" placeholder={t("footer.placeholder")}  />
                             
                         </div>
                         <div className="foter_link">

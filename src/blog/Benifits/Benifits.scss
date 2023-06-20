@@ -20,27 +20,18 @@
         .left_text {
             h6 {
                 width: 100%;
-                max-width: 534px;
+                max-width: 571px;
                 font-style: normal;
                 font-weight: 900;
                 font-size: 44px;
                 line-height: 80px;
-                color: #021D1A;
+                color: #464646;
+                & span {
+                    color: #ABA3FF !important;
+                }
             }
         }
 
-        .right_text {
-            p {
-                width: 100%;
-                max-width: 493px;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                color: #464646;
-                margin-bottom: 0;
-            }
-        }
     }
 
     .benifit_card {
@@ -54,7 +45,7 @@
             display: grid;
             place-items: center;
             margin-bottom: 30px;
-            background-color: #FFF7CA;
+            background: #DBFFE9;
             opacity: 0.8;
             img {
                 object-fit: contain;
@@ -66,10 +57,10 @@
             border-radius: 20px;
             width: 80px;
             height: 80px;
+            background-color: #FFF7CA;
             display: grid;
             place-items: center;
             margin-bottom: 30px;
-            background: #DBFFE9;
             opacity: 0.8;
             &:last-child {
                 background: #FFE9E0 !important;
@@ -164,15 +155,6 @@
                     line-height: 80px;
                 }
             }
-            .right_text {
-                p {
-                    font-size: 18px;
-                    line-height: 30px;
-                    margin-bottom: 0;
-                    width: 100%;
-                    max-width: 350px;
-                }
-            }
         }
     }
 }
@@ -189,15 +171,6 @@
                     max-width: 300px;
                     font-size: 27px;
                     line-height: 50px;
-                }
-            }
-            .right_text {
-                p {
-                    font-size: 16px;
-                    line-height: 30px;
-                    margin-bottom: 0;
-                    width: 100%;
-                    max-width: 300px;
                 }
             }
         }
@@ -233,16 +206,6 @@
                     font-size: 32px;
                     line-height: 50px;
                     text-align: center;
-                }
-            }
-            .right_text {
-                p {
-                    text-align: center;
-                    font-size: 16px;
-                    line-height: 30px;
-                    margin-bottom: 0;
-                    width: 100%;
-                    max-width: 400px;
                 }
             }
         }

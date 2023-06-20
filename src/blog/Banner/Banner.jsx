@@ -3,9 +3,11 @@ import { Container } from "react-bootstrap";
 import "./Banner.scss";
 import Bg from "../../assets/images/bg.svg";
 import Video from "../../assets/images/video.svg";
-import HeroBg from "../../assets/images/bg-hero2.svg"
+import HeroBg from "../../assets/images/bg-hero2.svg";
 import Typed from "react-typed";
+import { useTranslation } from "react-i18next";
 const Banner = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Container fluid>
@@ -15,7 +17,7 @@ const Banner = () => {
               <div className="title">
                 <h1>
                   <Typed
-                    strings={["Automate your human resource management"]}
+                    strings={[t("hero.title")]}
                     typeSpeed={40}
                     backSpeed={40}
                     // showCursor={true}
@@ -29,24 +31,26 @@ const Banner = () => {
                 {/* <h1>Automate your <br />
                                     human resource <br />
                                     management</h1> */}
-                <p>
-                  Astrolab tizim - reduces personnel costs and saves you time.
-                </p>
+                <p>{t("hero.desc")}</p>
                 <div className="btn_banner">
                   <a href="/" className="demo">
-                    Request a Demo
+                    {t("hero.demo")}
                   </a>
                   <a href="/" className="video">
                     <img src={Video} alt="" />
-                    <span>How it works</span>
+                    <span> {t("hero.works")}</span>
                   </a>
                 </div>
               </div>
               <div className="image">
-              <picture>
-                <source className="banner_main__img" srcset={HeroBg} media="(max-width: 430px)" />
-                <img className="banner_main__img" src={Bg} alt="" />
-              </picture>
+                <picture>
+                  <source
+                    className="banner_main__img"
+                    srcset={HeroBg}
+                    media="(max-width: 430px)"
+                  />
+                  <img className="banner_main__img" src={Bg} alt="" />
+                </picture>
               </div>
             </div>
           </Container>

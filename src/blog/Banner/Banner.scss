@@ -54,7 +54,6 @@
 
             .video {
                 position: static;
-                gap: 9px;
                 span {
                     // font-family: 'Mulish';
                     font-style: normal;
@@ -63,6 +62,7 @@
                     line-height: 23px;
                     letter-spacing: 0.05em;
                     color: #ffffff;
+                    margin-left: -20px;
                 }
             }
         }
