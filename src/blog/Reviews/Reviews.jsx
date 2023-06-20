@@ -40,7 +40,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -51,7 +51,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -62,7 +62,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -73,7 +73,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -84,7 +84,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -95,7 +95,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
@@ -106,7 +106,7 @@ const Reviews = () => {
         <SwiperSlide>
           <div className="slider_card">
             <div className="left">
-              <p>The service was amazing. I never had seen ever this system.</p>
+              <p>Я никогда не видела на столько крутой системы.</p>
               <span>Jane Doe</span>
             </div>
             <div className="right">
