@@ -13,7 +13,7 @@ const Marketing = () => {
   return (
     <div className='marketing'>
         <Container fluid="xl">
-                <Row>
+                <Row className='marketing_wrapper'>
                     <Col md="3">
                         <div className="card">
                             <img src={m1} alt="logo" />

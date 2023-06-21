@@ -247,6 +247,8 @@
                 display: none;
             }
             .nav_auth {
+                display: flex;
+                align-items: flex-end;
                 .login {
                     display: none;
                     a {
@@ -273,6 +275,8 @@
                     display: none;
                 }
                 .lang {
+                    display: flex;
+                    align-items: center;
                     a {
                         display: flex;
                         img {

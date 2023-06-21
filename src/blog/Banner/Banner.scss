@@ -181,6 +181,7 @@
 
 @media only screen and (max-width: 430px) {
     .banner_main {
+        position: relative;
         height: 350px;
         margin-top: 12px;
         &__img {
@@ -208,7 +209,7 @@
                 .video {
                     position: absolute;
                     bottom: 210px;
-                    left: 140px;
+                    left: 120px;
                     span {
                         // font-family: 'Mulish';
                         font-style: normal;
@@ -226,20 +227,13 @@
 
 @media only screen and (max-width: 390px) {
     .banner_main {
+        position: relative;
         height: 320px;
         &__img {
             width: 300px;
             height: 250px;
         }
-        .main {
-            .btn_banner {
-                .video {
-                    position: absolute;
-                    top: 170px;
-                    left: 120px;
-                }
-            }
-        }
+      
     }
 }
 

@@ -29,7 +29,7 @@ const Products = () => {
         </div>
         <Row>
           <div className="card_wrapper">
-            <Col>
+            <Col md="4">
               <div className="card_left">
                 <div className="card_img">
                   <img src={bg2} alt="" />
@@ -76,7 +76,6 @@ const Products = () => {
                     </span>
                     <span className="text">
                       Startups Case
-                      
                       Studies
                     </span>
                     <span className="about">From 100+ Countries</span>
@@ -111,37 +110,19 @@ const Products = () => {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col md="5">
-            <div className="card_right_3">
-              <div className="card_face">
-                <div className="card_img">
-                  <img src={bg4} alt="" />
-                </div>
-              </div>
+       <div className="face_wrapper">
+          <img className="face_img" src={bg4} width={644} height={573} alt="bg"/>
+          <div className="face-box">
+            <h3 className="face_wrapper-title">Face ID</h3>
+            <p className="face_wrapper-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <div className="face-btn-box">
+            <button className="face-wrapper_btn">
+              <p>View More Work</p>
+              <img src={ArrowLeft} alt="" />
+            </button>
             </div>
-          </Col>
-          <Col md={{ span: 5, offset: 2 }} className="card_bot">
-            <div className="card_left_2">
-              <div className="title">
-                <h4>Face ID</h4>
-              </div>
-              <div className="text">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-              <div className="link">
-                <a href="/">
-                  View More Work
-                  <img src={ArrowLeft} alt="" />
-                </a>
-              </div>
-            </div>
-          </Col>
-        </Row>
+          </div>
+       </div>
       </Container>
     </div>
   );

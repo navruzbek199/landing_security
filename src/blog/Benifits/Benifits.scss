@@ -45,7 +45,7 @@
 
     .benifit_card {
         width: 100%;
-        min-height: 415px;
+        height: 415px;
         padding: 50px 34px;
         .card_image {
             border-radius: 20px;
@@ -243,6 +243,158 @@
                     margin-bottom: 0;
                     width: 100%;
                     max-width: 400px;
+                }
+            }
+        }
+        
+    .benifit_card {
+        width: 100%;
+        min-height: 350px;
+        padding: 35px 25px;
+        .card_image {
+            border-radius: 20px;
+            width: 65px;
+            height: 65px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 30px;
+            background-color: #FFF7CA;
+            opacity: 0.8;
+            img {
+                object-fit: contain;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .card_image2 {
+            border-radius: 20px;
+            width: 65px;
+            height: 65px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 30px;
+            background: #DBFFE9;
+            opacity: 0.8;
+            &:last-child {
+                background: #FFE9E0 !important;
+                border-radius: 20px;
+            }
+            img {
+                object-fit: contain;
+                width: 30px;
+                height: 30px;
+                
+            }
+        }
+        .card_image3 {
+            border-radius: 20px;
+            width: 65px;
+            height: 65px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 30px;
+            background: #FFE9E0 !important;
+            border-radius: 20px;
+            img {
+                object-fit: contain;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .card_title {
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 30px;
+                color: #021D1A;
+                margin-bottom: 18px;
+            }
+        }
+        .card_text {
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #464646;
+                margin-bottom: 28px;
+            }
+        }
+        .card_link {
+            a {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.05em;
+                color: #124F48;
+                transition: all .5s;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+        &:hover{
+            background: #FFFFFF;
+            box-shadow: 0px 20px 84px rgba(225, 225, 225, 0.8);
+            border-radius: 20px;
+            transition: all 1s;
+            .card_link a{
+                background: #7F73FF;
+                border-radius: 31.5px;
+                padding: 15px 30px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                justify-content: center;
+                img{
+                    display: block;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .benifits {
+        .title {
+            text-align: center;
+            span {
+                text-align: center;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                color: #7F73FF;
+            }
+        }
+        .benifits_menu{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+            .left_text {
+                h6 {
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 28px;
+                    line-height: 35px;
+                    text-align: center;
+                }
+            }
+            .right_text {
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    width: 100%;
+                    max-width: 300px;
                 }
             }
         }
